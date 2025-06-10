@@ -1,0 +1,517 @@
+- application of python -> 
+  - web development (server-side),
+  - software development,
+  - mathematics,
+  - system scripting.
+
+- What python can do -> 
+  - create web application on server side 
+  - alongside software to create workflows.
+  - connect to database systems. It can also read and modify files.
+  - to handle big data and perform complex mathematics
+  - rapid prototyping, or for production-ready software development
+
+- Why python -> 
+  - works on different platforms
+  - simple syntax similar to the English language
+  - syntax that allows developers to write programs with fewer lines 
+  - contains an interpreter system
+  - procedural way, an object-oriented way or a functional way
+
+- Execute python -> 
+  - saved file with extension .py -> in CLI -> command -> python name_file.py
+  - in CLI -> command -> py -> write code -> press enter -> point -> 
+    - to exit python CLI -> exit
+
+- Indentation refers to the spaces at the beginning of a code line.
+- Python uses indentation to indicate a block of code.
+- use same indentations for script -> 
+  - Different indentations -> IndentationError: unexpected indent
+
+- command -> 
+  - single line -> #
+  - multiple lines -> """  ....  """
+- points -> Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it
+
+- variable name rules in python -> 
+  - A variable name must start with a letter or the underscore character
+  - A variable name cannot start with a number
+  - A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+  - Variable names are case-sensitive (age, Age and AGE are three different variables)
+  - A variable name cannot be any of the Python keywords.
+
+- data types -> 
+  - Text Type:	str
+  - Numeric Types:	int, float, complex
+  - Sequence Types:	list, tuple, range
+  - Mapping Type:	dict
+  - Set Types:	set, frozenset
+  - Boolean Type:	bool
+  - Binary Types:	bytes, bytearray, memoryview
+  - None Type:	NoneType
+
+- Tuple -> It is similat list but instead of squar brackets they put inside prantheses
+- Python is an object-orientated language, and as such it uses classes to define data types, including its primitive types.
+
+- Slicing in python -> 
+  - b = "Hello, World!"
+    print(b[2:5]) -> 2-> include, 5-> exclude
+    print(b[:5]) -> from start to 5, 5-> exclude
+    print(b[0:]) -> from start to end, 5-> exclude
+
+- Python divides the operators in the following groups -> 
+  - Arithmetic operators
+  - Assignment operators
+  - Comparison operators
+  - Logical operators
+  - Identity operators -> to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location:
+  - Membership operators -> used to test if a sequence is presented in an object
+  - Bitwise operators
+
+- List -> Lists are used to store multiple items in a single variable.
+- 4 built-in data types in Python -> store collections of data, the other 3 are Tuple, Set, and Dictionary
+
+- List items are indexed, the first item has index [0], the second item has index [1] etc
+- lists are ordered -> items have a defined order, and that order will not change
+
+
+- length -> 
+  - in js -> property -> nameOfArray.length 
+  - in python -> method -> len()
+
+- create list in python -> (data type === list, define as object)
+  - list literal syntax -> []
+  - Using the list() constructor to make a List
+
+- Python Collections (Arrays) -> 
+    - List is a collection which is ordered and changeable. Allows duplicate members.
+    - Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+    - Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+    - Dictionary is a collection which is ordered** and changeable. No duplicate members.
+
+- Specify a range of indexes by specifying where to start and where to end the range -> 
+  fruits = ["apple", "banana", "cherry", "melone", "peach", "pineapple"] -> 
+  new_fruits = fruits[2:5] - index 2 -include, index 5 -> exclude
+  new_fruits = fruits[:5] - start from first element, index 5 -> exclude
+  new_fruits = fruits[2:] - start from second element,  go on to the end of the list
+
+- insert(index, "str") -> inserts an item at the specified index
+- append("str") -> add item to end of list
+- remove("str")  -> removes the first occurance specified item -> return none
+- If there are more than one item with the specified value, the remove() method removes the first occurrence
+- pop(index) -> removes the specified index. -> if index will not be provided -> remove last item -> 
+    - return removed item
+
+- del keyword -> removes the list
+
+- Loop Through the Index Numbers -> You can also loop through the list items by referring to their index number. Use the range() and len() functions to create a suitable iterable.
+
+- Looping Using List Comprehension -> 
+  thislist = ["apple", "banana", "cherry"]
+  [print(x) for x in thislist]
+
+- List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list. -> syntax -> newlist = [expression for item in iterable if condition == True]
+
+- example -> even_numbers = [2,4,6,8,10,12,14,16,64] 
+greater_than_ten_numbers = [ x for x in even_numbers if x > 10] -> output [12, 14, 16, 64]
+
+- List objects have a sort(*, rverse =bool , key=func()) method that will sort the list alphanumerically, ascending, by default ->
+  - sort(key= function, reverse =True)
+
+  - To sort descending, use the keyword argument reverse = True
+  - key parameter to specify a function to be called on each list element before comparisons. The value of the key parameter should be a function that takes a single argument and returns a key to use for sorting purposes.
+
+- built-in List method copy() to copy a list 
+- built-in method list() to copy a list 
+- copy of a list by using the : (slice) operator. -> [:]
+
+- join two lists -> 
+  - + operator 
+  - appending all the items from list2 into list1 by for loop
+  - extend() method
+
+
+- Tuples are used to store multiple items in a single variable.
+- 4 classifications of data types collections (arrays) in python in orther to storsage of several items in single variable ->
+  - list
+  - tuple
+  - set 
+  - dictionary 
+
+- To create a tuple with only one item -> you have to add a comma after the item -> 
+  - If you do not put , after value, python recognizes as string, number etc nt tuple
+
+- tuples -> 
+  - data type -> tuple
+  - definition -> object 
+
+- tuple can accept -> specify a range of indexes by specifying where to start and where to end the range of index -> return -> new tuple with the specified items
+
+-We can not create empty tuple
+
+- To determine if a specified item is present in a tuple use the in keyword
+- Tuples are unchangeable, meaning that you cannot change, add, or remove items once the tuple is created.
+- Tuples are unchangeable, or immutable as it also is called.
+
+- change vales of tuple -> 
+  - convert tuple to list by list() -> change value -> convert to tuple by tuple()
+  - Add tuple to a tuple. You are allowed to add tuples to tuples, so if you want to add one item, (or many), create a new tuple with the item(s), and add it to the existing tuple
+
+-  "packing" a tuple -> assign valuse during create tuple
+-  unpacking a tuple -> returns values from tuple into variables
+- the number of variables === number of values in tuple
+- the number of variables !== number of values in tuple -> 
+  - use *nameof collections of other values => collection of remained values 
+
+- loop over tuple ->
+  - loop over elements
+  - loop over idex of element by range() and len()
+  - while loop 
+
+- Join Two Tuples ->
+  - + operator
+  - multiply tuples
+
+- tuple methods -> 
+  - count()	-> Returns the number of times a specified value occurs in a tuple
+  - index() -> 	Searches the tuple for a specified value and returns the first position of where it was found
+
+- Sets are used to store multiple items in a single variable.
+- A set is a collection which is unordered, unchangeable*, and unindexed.
+
+- create set -> 
+  - set literal synrtax -> {}
+  - set constructor function 
+
+- you can loop through the set items using a for loop, or ask if a specified value is present in a set, by using the in keyword
+
+- Once a set is created, you cannot change its items, but you can add new items
+
+// add new items to set
+- add ("str") -> add new items to set 
+- update([iterable]) -> add items fron one set to another -> if print it -> return none
+
+// remove items of set
+- remove ("str") -> remove items from set  -> none -> point -> if argumenr was not in set  ->
+  - Create error (key error) 
+- discard("str") -> add items fron one set to another -> if print it -> return none -> point -> if argumenr was not in set ->
+  - There is not error 
+
+
+- join methods for sets -> 
+  - union(iterable) -> return new set -> 
+      - possible substitute union() by | like all_fruits = fruits | red_fruits
+      - possible join several sets or tuple or list by union()
+      - possible join several sets or tuple or list by union()
+      - possible join several sets by union(): separation by (,) or (|)
+  - update (iterable) -> return none -> first set contains all values of two sets
+  - intersection([iterable]) -> common elements between two sets
+      - possible substitute intersection() by & like all_fruits = fruits & red_fruits
+  - difference([iterable]) -> return new set of kept non-repeatitive elements of frist set from other sets
+      - (-) operator instead of the difference() method
+  - difference_update([iterable]) -> like difference but change first set (not new set) 
+  - symmetric_difference([iterable]) -> returns all elements except repeatitive elements in new set
+      - (^) operator instead of the symmetric_difference()
+  - symmetric_difference_update() like symmetric_difference([iterable]) but return in place first set not new set
+
+- Dictionaries are used to store data values in key:value pairs.
+- A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+- Dictionary items are ordered, changeable, and do not allow duplicates.
+- When we say that dictionaries are ordered, it means that the items have a defined order, and that order will not change.
+
+- access to key-value in dictionary -> 
+  - ["name of key"]
+  - get() 
+
+- get kes, values and key-values -> 
+  - keys() -> Return a set-like object providing a view on the dict's keys
+  - values() -> Return an object providing a view on the dict's values
+  - items() -> set-like object providing a view on the dict's items.
+
+- presence specified key in dict -> 
+  - in key word 
+
+- update() -> update the dictionary with the items from the given argument 
+  - argument should be iterable object or a dictionary
+
+- remove item from dictionary -> 
+  - pop() -> removes the item with the specified key name -> 
+    - if argument has not been provided, typeerror will happen
+    - if print dict.pop(key) -< returns the value of key
+  -popitem() method removes the last inserted item -> 
+    - print(education_levels.popitem()) -> return value of removed item as a tuple
+    - print(education_levels) -> return dict after removing item
+  - del key word with specified item -> 
+    - del education_levels["primary_school"]
+    - removing whole of dictionary
+  - clear() -> remove whole items of dictionary and create empty dictionary
+
+- for loop -> 
+  #show key 
+  - for levels in education_levels:
+      print(levels)   
+
+  #show values
+  - for levels in education_levels:
+      print(education_levels[levels])   
+
+  #show key 
+  - for levels in education_levels.keys():
+      print(levels) 
+
+  #show values 
+  - for levels in education_levels.values():
+      print(levels) 
+
+  #show key-value 
+  - for levels, courses in education_levels.items():
+      print(levels, courses) 
+
+
+- copy a dictionary -> 
+  - copy() -> make a copy dictionary with copy() -> Return a shallow copy of the dict 
+  - build-in dict()
+
+- access to value in nested dictionary -> 
+  - print(education_levels_classification["high_school"]["thirdstYear"])
+
+
+
+
+- if statement -> evaluation a condition return true or fals
+- elif statement -> if the first condition is not true -> try this condition
+- else statement -> else ststement catches everything which is not caught bt the preceeding conditions 
+
+- if (if statement) is short enough, it can be written in one line
+- if (else statement) is short enough, it can be written in one line
+- if (if and else statements) are short enough, they can be written in one line -> ternary operator 
+
+- ternary operator structure -> 
+  print(if block statement, if, if statement is true) if statement (condition) else print(else statement)
+
+- in order to comparison datatype in if -else statement in python -> we should use this statement:
+  - isinstance(variableName, datatype)
+
+- code block of if should not be empty -> if it is empty -> for prevention error -> put pass key word
+- The match statement is used to perform different actions based on different conditions.
+
+- match statement -> it is used to perform different actions based on the different conditions (switch case in JavaScript) ->
+  - Default Value -> using _ as last case considering default value 
+
+- With the while loop we can execute a set of statements as long as a condition is true.
+- The range() function defaults to 0 as a starting value, however it is possible to specify the starting value by adding a parameter: range(2, 6), which means values from 2 to 6 (but not including 6)
+
+- range(startvalue, end value, increament value)
+- Information can be passed into functions as arguments.
+- Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.
+
+- From a function's perspective:
+    - A parameter is the variable listed inside the parentheses in the function definition.
+    - An argument is the value that is sent to the function when it is called.
+
+- if you do not know how many arguments should be passed to function -> arbitrary argumnet -> 
+- *arg  -> unkown number of arguments -> a tuple of arguments is passed to function -> access value of tuple -> based index
+- **kwargs  -> unkown number of key-value pair arguments -> a dictionary of arguments of arguments is passed to function -> access value of dictionary -> based dictionary order
+
+- pass to argumnet to function -> 
+  - based number of parameters, the same number of arguments should be passed -> the order of arguments is important
+  - arbitrary arguments -> a tuple of arguments -> unknown number of arguments should be passed  -> access -> based index
+  - arguments -> key-value pair -> the order of arguments is not important
+  - arguments -> unknown number of key-value pair  ->
+   def addition_numbers (**number):
+        sum_number = number["number2"] + number["number2"]
+        return sum_number
+
+  -> access -> arg["name of property"] -> point -> 
+    - This way the function will receive a dictionary of arguments, and can access the items accordingly
+
+- default parameter -> If a parameter contains its value and we do not provide value (argument) for it, when we call function, function will be used its value 
+- positional parameter -> the arguments passed into the function based on their order, and based the order of parameters will be passed into the function
+
+- The function body should not be empty. If we need that function will not return any thing we can use  pass in the function body
+
+- If we need only positional perameters in functions -> 
+  - def additionCalculation (number, /)
+
+- If we need only default perameters in functions -> 
+  - def additionCalculation (* ,number) 
+
+- Recursion -> A function calls itself
+- lambda function is a small anonymous function -> syntax ->
+  - lambda arguments : expression
+
+- main usage of lambda function -> 
+  - use as a function inside another function 
+
+- Use lambda functions when an anonymous function is required for a short period of time
+- Arrays are used to store multiple values in one single variable
+- An array can hold many values under a single name, and you can access the values by referring to an index number.
+
+- point -> if we perform for loop on array created by numpy and we want to modify element -> it is not possible -> 
+  - The array which is looping is a copy of original array -> arrays are reference data type -> 
+    - reference of copy != reference of original array -> the element of original array will not be modified
+
+- append()->  to add an element to a list not array created by numpy
+
+- Python is an object oriented programming language
+- A Class is like an object constructor, or a "blueprint" for creating objects.
+- All classes have a function called __init__(), which is always executed when the class is being initiated -> 
+  - functionality ->  assign values to object properties, or other operations that are necessary to do when the object is being created
+
+- The __init__() function is called automatically every time the class is being used to create a new object.
+- __str__() in class -> class object is represented as a string. -> use for debugging
+- if __str__() in class is not set -> string representation of the object is returned
+
+
+- Inheritance allows us to define a class that inherits all the methods and properties from another class.
+- Parent class -> class being inherited from, also called base class.
+- Child class -> class that inherits from another class, also called derived class
+
+- To keep the inheritance of the parent's __init__() function, add a call to the parent's __init__() function
+- super() function -> make the child class inherit all the methods and properties from its parent
+
+- An iterator is an object that contains a countable number of values
+- Lists, tuples, dictionaries, and sets are all iterable objects. They are iterable containers which you can get an iterator from
+- Even strings are iterable objects, and can return an iterator
+- The for loop actually creates an iterator object and executes the next() method for each loop
+- To create an object/class as an iterator you have to implement the methods __iter__() and __next__() to your object.
+- The __next__() method also allows you to do operations, and must return the next item in the sequence
+- To prevent the iteration from going on forever, we can use the StopIteration statement
+
+- polymorphism -> many forms -> methods, functions and operators with the same name which are executed in class and object 
+
+- POLYMORPHISM ->
+  - There are several classes and they contain the same method. The instances from classes demonstrated different results from execution of the same method
+  - There is a parent class which inherits its properties and methods to children classes. In children classess, if there is same method with the same name with parent's method, the method will be overwritten and execution of method has  different reults. 
+
+- A variable is only available from inside the region it is created. This is called scope.
+
+- Consider a module to be the same as a code library.
+- When using a function from a module, use the syntax: module_name.function_name
+
+- JSON is a syntax for storing and exchanging data
+- JSON is text, written with JavaScript object notation
+
+- convert json to python dictionary -> json.loads() 
+- convert python dictionary to json -> json.dumps(dic, indentation= , sort_keys=true) 
+
+- You can convert Python objects of the following types, into JSON strings:
+  - dict
+  - list
+  - tuple
+  - string
+  - int
+  - float
+  - True
+  - False
+  - None
+
+- regExp -> a sequence of characters that forms a search pattern -> to check if a string contains the specified search pattern
+
+- methods of re module -> 
+  - findall -> return a list containing all match 
+  - search -> match object -> show all match in everywhere
+  - split("pattern", str, maxsplit=specified number) -> return a list from splited strings from the match -> maxsplit -> determine number of split
+  - sub ("pattern","replacing pattern", str, count=specified number)-> replace match or matches with a string ->  determine number of replaced pattern
+
+- match object -> contains three methods ->   
+  - .span() returns a tuple containing the start-, and end positions of the match
+  - .string returns the string passed into the function
+  - .group() returns the part of the string where there was a match
+
+- PIP -> pip -> package manager for python packages
+- packages -> all needed files for a module 
+- module -> Python code libraries you can include in your project
+
+- try -> you test a block of code for errors
+- except -> you handle the error
+- else -> you execute code when there is no error.
+- finally -> you execute code, regardless of the result of the try- and except blocks
+
+- when there is an error -> you can raise (throw) an exception -> use raise keyword -> 
+  - raise Exception("Sorry, no numbers below zero")
+
+- F-string allows you to format selected parts of a string.
+- f-string structure -> f"string and {placeholder}"
+
+- {} ->  a placeholder can contain variables, operations, functions, and modifiers to format the value
+- modifier ->  to format the value -> modifier is included -> 
+  - : and + formatting type, like .2f -> means -> fixed pointed number and with 2 decimals 
+- You can perform if...else statements inside the placeholders
+
+- point -> if the value is integer -> we can not use formatter (:.2f) in placeholder -> we should use -> :2f and it returns only fixed pointed number 
+
+- points -> 
+  - {:.2f} -> fixed pointed number and with 2 decimals 
+  - {:2f} -> fixed pointed number and with 2 decimals and 4 (0) after decimal numbers -> like : 60.560000
+  - {:.2} -> fixed pointed number and with 1 decimals -> return scientific format without decimal -> 6e+01
+  - {:.2} -> fixed pointed number and with 2 decimals -> return scientific format without decimal-> 6e+01
+  - {:2} -> integer -> returns number -> 60.54
+
+- A virtual environment in Python is an isolated environment on your computer, where you can run and test your Python projects ->
+  - to manage project-specific dependencies without interfering with other projects or the original Python installation
+
+- properties of virtual environment -> 
+  - Has its own Python interpreter
+  - Has its own set of installed packages
+  - Is isolated from other virtual environments
+  - Can have different versions of the same package
+
+- Importance of virtual environment -> 
+  - It prevents package version conflicts between projects
+  - Makes projects more portable and reproducible
+  - Keeps your system Python installation clean
+  - Allows testing with different Python versions
+
+- method for working with files -> open() -> 
+  - open (filename , mode)
+
+- modes (methods) -> 
+  - "r" -> read
+  - "a" -> append 
+  - "w" -> write 
+  - "x" -> create 
+
+- dafualt parameter of open() -> ("name of file", "rt) -> r -> read, t -> text
+- matplotlib -> low level graph plotting library in order to visualization utility
+
+- step by step create a plot -> 
+  - import numpy as num and matplotlib.pyplot as plt
+  - create array of x-points by np
+  - create array of y-points by np
+  - plt.plot(xpoits, ypoints, marker ="o")
+  - plt.title("specified name of plot)
+  - plt.show()
+
+- plot(parm1, param2, param3(shortcut string notation parameter 'o')) -> to draw points -> by defualt draws line point to point ->
+  - param1 -> points on the x-axis
+  - param2 -> points on the y-axis
+
+- typeof array created by numpy module -> <class 'numpy.ndarray'>
+- numpy ->  Python library used for working with arrays.
+- NumPy stands for Numerical Python. -> It is an open source project and you can use it freely.
+
+- advantage of array bu numpy vs list of python -> 
+  - Array by numpy is faster 50x than python list -> the are stored at one continuous place in memory -> 
+    - process calling  locality of reference in computer science.
+  - it contains a diverse functions and working is easy with them
+  - array object in numpy calling (ndarray)
+
+- format of string (marker) -> 
+  - main format -> plt.plot(xpoits, ypoints, marker ="o")
+  - alternative format -> 
+    - (ypoints, 'o:r', ms=20)
+    - (ypoints, 'o:r', ms=20, mec = "b")
+    - (ypoints, linestyle(ls) = "dotted")
+    - (ypoints, color = "r", linewidth = "16')
+
+
+- label for x and y axies -> 
+  - plt.title("Sports Watch Data")
+  - plt.xlabel("Average Pulse")
+  - plt.ylabel("Calorie Burnage")
+  - font dict argument -> 
+      font1 = {'family':'serif','color':'blue','size':20}
+      font2 = {'family':'serif','color':'darkred','size':15}
+
+    plt.title("Sports Watch Data", fontdict = font1, loc = "left")

@@ -1,0 +1,2 @@
+- What is the __str__ method in Python? 
+- what is the importance of it?

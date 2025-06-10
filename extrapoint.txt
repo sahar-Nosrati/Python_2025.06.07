@@ -1,0 +1,102 @@
+- shallow copy -> A shallow copy occurs when you copy the reference of an object to a new variable. Only the top-level properties are copied, while nested objects or arrays still reference the original memory location
+
+- different types of errors in python ->
+  - index error -> index is out of range
+  - NameError: name 'pri' is not defined -> equal reference error in js
+  - SyntaxError: invalid syntax -> equal syntax error in js
+  - ValueError: too many values to unpack (expected 3)
+  - ValueError: tuple.index(x): x not in tuple
+  - IndentationError: unexpected indent
+  - TypeError: list.append() takes exactly one argument (2 given)
+  - ValueError: list.remove(x): x not in list
+  - KeyError: 'papaya' -> If we want to remove an element which is not in set or etc
+  - AttributeError: 'dict' object has no attribute 'bananan'
+  - IndentationError: expected an indented block after 'if' statement on line 28
+  - TypeError: addition_numbers() missing 1 required positional argument: 'number3'
+  - IndexError: tuple index out of range
+  - RecursionError: maximum recursion depth exceeded
+  - json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 37 (char 36)
+
+
+- Object oriented programming language (OOP) ->
+- Main goals of OOP -> to build modular, maintainable, and scalable applications.
+- Concepts ->
+  - classes
+  - objects 
+  - inheritance
+  - encapsulation, 
+  - polymorphism,  
+  - abstraction
+
+- python classes -> A class is a collection of objects. Classes are blueprints for creating objects. A class defines a set of attributes and methods that the created objects (instances) can have.
+-  Object -> an instance of a Class. It represents a specific implementation of the class and holds its own data
+
+- object consists of -> 
+  - State: It is represented by the attributes and reflects the properties of an object.
+  - Behavior: It is represented by the methods of an object and reflects the response of an object to other objects.
+  - Identity: It gives a unique name to an object and enables one object to interact with other objects
+
+- Creating an object -> instantiating a class to create a new instance of that class. This process is also referred to as object instantiation
+
+ general structure of class in python -> 
+ class Car:
+  def __init__(self, name, model, color):
+    self.name = name
+    self.model = model
+    self.color = color
+
+
+- self parameter is a reference to the current instance of the class. It allows us to access the attributes and methods of the object.
+
+-__init__ method is the constructor in Python, automatically called when a new object is created. It initializes the attributes of the class.
+
+- class variables -> the variables that are shared across all instances of a class. It is defined at the class level, outside any methods. All objects of the class share the same value for a class variable unless explicitly overridden in an object.
+
+- instance variables -> Variables that are unique to each instance (object) of a class. These are defined within the __init__ method or other instance methods. Each object maintains its own copy of instance variables, independent of other objects.
+
+- inheritance -> Inheritance allows a class (child class) to acquire properties and methods of another class (parent class). It supports hierarchical classification and promotes code reuse
+
+- types of inheritance -> 
+  - Single Inheritance
+  - Multiple Inheritance
+  - Multilevel Inheritance
+  - Hierarchical Inheritance
+  - Hybrid Inheritance
+
+- polymorphism -> polymorphism allows methods in different classes to share the same name but perform distinct tasks.Polymorphism allows methods to have the same name but behave differently based on the object’s context. It can be achieved through method overriding or overloading.
+
+- Types of Polymorphism -> 
+  - Compile-Time Polymorphism -> during the compilation of the program. It allows methods or operators with the same name to behave differently based on their input parameters or usage 
+  - Run-Time Polymorphism -> during the execution of the program. It occurs when a subclass provides a specific implementation for a method already defined in its parent class, commonly known as method overriding
+
+- Encapsulation -> 
+  - Encapsulation is the bundling of data (attributes) and methods (functions) within a class, restricting access to some components to control interactions.
+
+- Types of Encapsulation:
+  - Public Members: Accessible from anywhere.
+  - Protected Members: Accessible within the class and its subclasses.
+  - Private Members: Accessible only within the class.
+
+- abstraction -> Abstraction hides the internal implementation details while exposing only the necessary functionality
+
+- Types of Abstraction -> 
+  - partial abstraction -> Abstract class contains both abstract and concrete methods.
+  - full abstraction -> Abstract class contains only abstract methods (like interfaces).
+
+- an abstract class is a class that cannot be instantiated on its own and is designed to be a blueprint for other classes. Abstract classes allow us to define methods that must be implemented by subclasses, ensuring a consistent interface while still allowing the subclasses to provide specific implementations.
+
+- class that inherits from ABC (Abstract Base Class) (import ABC module)
+
+- Abstract Base Class -> - Abstract Base Class -> BASED ON abstract base class -> Contains abstracted method in order to inharite to subclass in order to build method for create new instance -> capability of blueprint for other subclass with built method for instantiation but not capable of instantiation
+- Concrete Subclass -> subclass contains abstract method(s) inherited from abstract based class and concrete methods for instantiation -> capable both blueprint and instantiation 
+- instance -> We create an instance of concrete subclass 
+
+- Sorting is defined as an arrangement of data in a certain order
+- sorting techniques -> 
+  - Bubble Sort -> works by repeatedly swapping the adjacent elements if they are in the wrong order -> 
+    - iterates through the array multiple times, with each pass pushing the largest unsorted element to its correct position at the end.
+  - Selection Sort -> comparison-based sorting algorithm -> 
+    -  It sorts an array by repeatedly selecting the smallest (or largest) element from the unsorted portion and swapping it with the first unsorted element. This process continues until the entire array is sorted.
+  - insertion sort -> works by iteratively inserting each element of an unsorted list into its correct position in a sorted portion of the list. 
+
+- we should import datetime module for date and time
